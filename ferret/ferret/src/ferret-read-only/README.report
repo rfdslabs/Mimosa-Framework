@@ -1,0 +1,4 @@
+Reporting with Ferret
+
+ferret report.stats=true -r file.pcap
+

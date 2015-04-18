@@ -1,0 +1,8 @@
+- Create a proper data abstraction layer (to be used by CLI, daemon, modules...)
+- Make collection more generic; currently it's just cisco-oriented
+- Introduce a method to download caps based on packet count (i.e. show monitor capture), instead of timed checks
+- Update CLI to display/navigate through findings
+- Write Pcredz module
+- Write ferret module
+- Advanced options (e.g. name of capture buffer)
+

@@ -1,0 +1,6 @@
+Filtering with Ferret
+
+ferret filter.proto=GRE -r file.pcap
+
+	Filters for "GRE" packets.
+

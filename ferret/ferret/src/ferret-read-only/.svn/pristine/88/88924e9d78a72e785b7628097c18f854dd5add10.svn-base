@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\crypto">
+      <UniqueIdentifier>{ed43a190-e951-49a8-9a07-faa12b34e153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dgram app">
+      <UniqueIdentifier>{9e69b0ea-3e71-47b6-88a1-75d8ecfb99ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stack">
+      <UniqueIdentifier>{120e74a2-c3ea-4330-9a37-7a5518f0124c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stream app">
+      <UniqueIdentifier>{5cbe64e7-8150-4d67-8ac5-52335be82207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{a83a4b8b-9604-4e91-8350-b1473c903f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\i/o">
+      <UniqueIdentifier>{f90ddb03-3a91-4658-8702-9eff954d44b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\file">
+      <UniqueIdentifier>{d277c7e9-1570-4146-b957-b54711485d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\smells">
+      <UniqueIdentifier>{20afe545-e50a-414e-a701-3653a053c98a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ferret.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto-des.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto-md5.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto-wificrc.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-atalknbp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-bittorrentdht.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-callwaveiam.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-cisco.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-cups.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-dhcp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-dns-multicast.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-dns-netbios.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-dns-srv.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-dns.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-isakkmp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-ldap.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-netbios.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-ppp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-sip.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-smb.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-snmp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-srvloc.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-ssdp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-tivo.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-upnp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-ymsg.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-arp.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-atalkddp.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-ethernet.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-gre.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-icmp.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-ieee8021x.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-igmp.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-ip.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-ipv6.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-layer1.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-novellipx.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-tcp.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-tcpchecksum.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-tcpfrag.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-udp.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-wifi80211.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-aimoscar.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-http.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-httpcookie.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-httpform.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-httprsp.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-msnms.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-pop3.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-rdp.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-smtp.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-ymsg.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-ahocorasick.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-base64.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-hexval.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-housekeeping.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-manuf.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-mystring.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-stringtab.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-val2string.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\in-pcapfile.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\in-pcaplive.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\file-jpeg.c">
+      <Filter>Source Files\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util-memcasecmp.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\out-hamster.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\out-jotdown.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\filter-proto.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-ssl.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\filters.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\filter-addr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-smells.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-dcerpc.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-smb.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-sip-sdp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-rtp-avp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-rtp-rtcp.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-ftp.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\report-hosts.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\report-stats.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\report-fanout.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack-listener.c">
+      <Filter>Source Files\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\report-nmap.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\smells-udp-btdht.c">
+      <Filter>Source Files\smells</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\smells-udp-btutp.c">
+      <Filter>Source Files\smells</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dgram-dhcpv6.c">
+      <Filter>Source Files\dgram app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\smells-tcp.c">
+      <Filter>Source Files\smells</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-unknown.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\parse-address.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\malloctrac.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixie.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\smack1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\smackqueue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-bittorrent.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-rtsp.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\report-ciphersuites.c">
+      <Filter>Source Files\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stream-ssh.c">
+      <Filter>Source Files\stream app</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\ferret.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crypto-wificrc.h">
+      <Filter>Source Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crypto-md5.h">
+      <Filter>Source Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\in-pcaplive.h">
+      <Filter>Source Files\i/o</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\in-pcapfile.h">
+      <Filter>Source Files\i/o</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\out-jotdown.h">
+      <Filter>Source Files\i/o</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-asn1.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-tcpfrag.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-extract.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-netframe.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-parser.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-tcp.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-tcpchecksum.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util-base64.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util-val2string.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util-hamster.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util-hexval.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util-housekeeping.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util-manuf.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util-mystring.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util-stringtab.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stream-http.h">
+      <Filter>Source Files\stream app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dgram-dns.h">
+      <Filter>Source Files\dgram app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\filters.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-smells.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dgram-sip.h">
+      <Filter>Source Files\dgram app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\report.h">
+      <Filter>Source Files\i/o</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack-listener.h">
+      <Filter>Source Files\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\parse-address.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pixie.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\platform.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\template.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\smack.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\smackqueue.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stream-unknown.h">
+      <Filter>Source Files\stream app</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.report">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
