@@ -9,7 +9,7 @@ Let me clarifing some things here:<br>
 2 - We know about other methods like GRE-Tunnels, Port Mirroring, lawful interception etc.<br>
 3 - This is a automated tool for help PENTESTERS in a controled enviroment to collect intresting data.<br>
 4 - This is really usefull for Threat Intelligence collection.<br>
-4 - You have to get ENABLE privilege on the router to use Mimosa. :P<br>
+5 - You have to get ENABLE privilege on the router to use Mimosa. :P<br>
 
 python mimosa-cli.py<br>
 Mimosa> help<br>
