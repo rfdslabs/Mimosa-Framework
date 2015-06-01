@@ -3,7 +3,7 @@
 
 This is Mimosa Framework first release.
 
-![Alt text](/http://i.imgur.com/ndV6CXZ.jpg "Mimosa YSTS)
+![ScreenShot](http://i.imgur.com/ndV6CXZ.jpg) 
 
 
 ## Disclaimer
