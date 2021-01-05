@@ -8,13 +8,13 @@ This is Mimosa Framework first release.
 
 ## Disclaimer
 
-Some relevant points before about the project:
+Some relevant points about the project:
 
 1. We are NOT exploiting a 0day on Cisco devices
 2. We are aware of other methods, like GRE tunnels, port mirroring, lawful interception, etc.
 3. This is an automated tool to help **pentesters** to collect interesting data in a **controled enviroment**
 4. This is really useful tool for threat intelligence data gathering
-5. You have to get **ENABLE** privilege on the router to use Mimosa
+5. You have to get **ENABLE** privilege on the router to use the framework
 
 ## Usage
 
