@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /* Mimosa Node.JS Browsers Check  
 https://github.com/rfdslabs/Mimosa-Framework
 
@@ -21,61 +22,69 @@ bash$ node parser.js file
 │ Chrome 40      │ 13       │
 ├────────────────┼──────────┤
 │ IE 11          │ 147      │
-
-
-
 */
+// Mimosa Node.JS Browsers Check  
+// https://github.com/rfdslabs/Mimosa-Framework
 
-var readline = require('readline');
-var UAParser = require('ua-parser-js');
-var Table    = require('cli-table');
-var fs       = require('fs');
-var _        = require('lodash');
+const readline = require('readline');
+const UAParser = require('ua-parser-js');
+const Table = require('cli-table');
+const fs = require('fs');
+const _ = require('lodash');
 
-var parser = new UAParser();
-var uaArr  = [];
-var lines  = 0;
+// Get the input file from command-line arguments
+const inputFile = process.argv[2];
+if (!inputFile) {
+  console.error('Usage: node browser.js <fileWithUserAgents>');
+  process.exit(1);
+}
 
-var rl = readline.createInterface({
-  input: fs.createReadStream('ua'),
-  terminal: false
+// Check if the file exists
+if (!fs.existsSync(inputFile)) {
+  console.error(`Error: File '${inputFile}' not found.`);
+  process.exit(1);
+}
+
+const parser = new UAParser();
+const uaArr = [];
+let lines = 0;
+
+const rl = readline.createInterface({
+  input: fs.createReadStream(inputFile),
+  terminal: false,
 });
 
-rl.on('line', function (line) {
-  var result = parser.setUA(line).getResult();
-  var found = _.find(uaArr, {
-    browser: { name: result.browser.name, major: result.browser.major }
+rl.on('line', (line) => {
+  const result = parser.setUA(line).getResult();
+  const found = _.find(uaArr, {
+    browser: { name: result.browser.name, major: result.browser.major },
   });
 
   if (!found) {
-    result.count = 0;
+    result.count = 1;
     uaArr.push(result);
-    return;
+  } else {
+    found.count++;
   }
 
-  found.count++;
   lines++;
 });
 
-rl.on('close', function () {
-  var table = new Table({
-    head: ['Name', 'Quantity']
-  });
-  uaArr.forEach(function (value, index) {
-    if (value.browser.name) {
-      table.push([
-        value.browser.name + ' ' + value.browser.major,
-        value.count
-      ]);
-    } else {
-      table.push([
-        'Not recognized',
-        value.count
-      ]);
-    }
+rl.on('close', () => {
+  const sortedData = _.sortBy(uaArr, [
+    (entry) => entry.browser.name || '',
+    (entry) => parseInt(entry.browser.major || '0', 10),
+  ]);
+
+  const table = new Table({
+    head: ['Name', 'Quantity'],
   });
 
-  _.sortByAll(uaArr, ['name']);
+  sortedData.forEach((value) => {
+    const browserName = value.browser.name ? `${value.browser.name} ${value.browser.major}` : 'Not recognized';
+    table.push([browserName, value.count || 0]);
+  });
 
+  console.log(`Processed ${lines} lines.`);
   console.log(table.toString());
 });
